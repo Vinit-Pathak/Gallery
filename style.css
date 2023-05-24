@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.left-block{
+    flex-basis: 30%;
+
+}
+
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.heading{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+.sub-heading{
+    color: #ddd;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.card{
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    cursor: pointer;
+    background-blend-mode: soft-light;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover{
+    background-blend-mode: normal;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+
+@media (max-width: 1024px){
+    .container{
+        flex-direction: column;
+        margin-block: 22px;
+    }
+
+    .gallery{
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 220px;
+    }
+    
+    .card{
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+}
