@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 20px;      
     background: linear-gradient(to right, #fc5c7d, #6a82fb);
 }
 
@@ -48,13 +48,13 @@ body{
 
 .card{
     background-size: cover;
-    background-position: top;
+    background-position:top;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #222;
-    cursor: pointer;
+    cursor:pointer;
     background-blend-mode: soft-light;
     transition: all 1s ease-in-out;
 }
